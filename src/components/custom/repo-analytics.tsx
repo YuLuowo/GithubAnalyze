@@ -15,7 +15,7 @@ export default function RepoAnalytics({ repos }: RepoAnalyticsProps) {
     const topRepo = repos.reduce((a, b) => (a.stars > b.stars ? a : b))
 
     return (
-        <div className="flex items-center w-full gap-4 mt-6">
+        <div className="flex flex-col md:flex-row items-center w-full gap-4 mt-6">
             <h3 className="font-semibold">Average Stars: {avgStars}</h3>
             <h3 className="font-semibold">
                 Top Repository: <a href={topRepo.url} target="_blank" className="hover:underline">
