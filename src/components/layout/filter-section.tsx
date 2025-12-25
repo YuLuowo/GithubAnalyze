@@ -30,7 +30,7 @@ export default function FilterSection() {
 
     return (
         <div className="flex flex-col justify-center items-center w-full max-w-6xl gap-4">
-            <Card className="min-w-6xl gap-4">
+            <Card className="w-full md:min-w-6xl gap-4">
                 <CardHeader>
                     <CardTitle className="text-base">Filters</CardTitle>
                 </CardHeader>
